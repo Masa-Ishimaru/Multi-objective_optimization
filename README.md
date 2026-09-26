@@ -1,6 +1,6 @@
 # Multi-objective_optimization
 
-Updated using Optuna because of its commonarity and popularity in recent days.
+Updated using Optuna because of its popularity in recent days. 
 
 This sample code is trying to find Pareto front using PHYSBO, targeting 3 glass properties at the same time with visuals like a responsive surface. The notebook [3] is computing Pareto front, and from [1] to [2] are just preparation for [3]. The dataset is from the public SciGlass; targets are modulus, density, and Tg. Regression models are all random forest with hyperparameter tuning. PHYSBO has multiple options to compute Pareto front: random search, Bayesian optimization (BO), and full search, and this example uses BO. The red dots in the first graph are Pareto front. The second graph shows fitted surface with Pareto front, but the surface is made by kernel Ridge regression (kernel = "poly") just to help see the front curve, so this is a simple approximation and no physical meaning.
 
